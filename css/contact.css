@@ -1,0 +1,86 @@
+/*===============================================================================*/
+/*||||||||||||||||||    C   O   N   T   A   C   T       M   E   |||||||||||||||||*/
+/*===============================================================================*/
+.navbar{
+      width: 100%;      
+    }
+.get_in_touch{
+            text-align: center;
+            margin-top: 5vw;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: type 3s steps(20);
+            font-family: consolas;
+            border-right: 0.2vw solid black;
+            width: 18ch;
+        }
+@keyframes type
+    {
+        0% {
+            width: 0ch; 
+        }
+        100% {
+            width: 18ch;
+        }
+    }
+.talking-icon{
+    width: 2vw;
+}
+.icon{
+    width: 5vw;
+    transition: all 300ms ease-in-out;
+}
+
+.container-contact{
+    padding: 1vw 1vw 2vw 1vw;
+    transition: all 300ms ease-in-out;
+}
+.container-contact:hover{
+    transition: all 300ms ease-out;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.container-contact:hover .icon{
+      animation: spin_4607 2s linear infinite;
+      transform-origin: 50% 50%;
+}
+
+@keyframes spin_4607 {
+  0% { transform:rotate(0deg) }
+  60% { transform:rotate(359deg) }
+  100% { transform:rotate(359deg) }
+}
+.contact-info{
+      margin-bottom: 10vw;
+}
+
+
+/*================================================*/
+
+/*================================================*/
+@media screen and (max-width: 768px){
+    .talking-icon{
+            width: 5vw;
+    }
+    .icon{
+            width: 15vw;
+    }
+    .glyphicon-home {
+            display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

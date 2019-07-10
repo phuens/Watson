@@ -1,0 +1,159 @@
+
+  *{
+    transition: all ease-in-out 300ms;
+  }
+
+  .front{
+    background-image: url("../images/background.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+    animation:show ease-in 500ms;
+    background-attachment: fixed;
+
+  }
+  @keyframes show{
+      from{opacity:0;}
+      to{opacity:1;}
+  }
+  /**==========================================
+    H E A D E R
+  ==========================================**/
+  .header{
+    position:relative;
+    top:200px;
+    color:white;
+    animation: headerShow ease-in 800ms;
+    margin-left: 10%;
+  }
+  @keyframes headerShow{
+    from{opacity: 0;}
+    to{opacity:1;}
+  }
+
+  .slogan{
+    font-family: sans-serif;
+    font-size: larger;
+    text-decoration: none;
+    color: #1c5da2;
+  }
+  a .slogan{
+    text-decoration: none;
+  }
+  #animate {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 2000ms steps(20);
+    border-right: 0.2vw solid white;
+    width: 24ch;
+  }
+  @keyframes type {
+    0% {width: 0;}
+    100% {width: 24ch;}
+  }
+
+  h1{
+    font-family:'Major Mono Display', sans-serif;
+    font-size: 70px;
+  }
+
+  #goof{
+    font-family:'Major Mono Display', sans-serif;
+  }
+  /**==========================================
+      A B O U T   M E
+    ==========================================**/
+  .sub-header{
+    font-family:'Major Mono Display', sans-serif;
+    text-align: center;
+  }
+
+  .description_me{
+    line-height: 35px;
+    text-align: justify;
+  }
+  /**==========================================
+    P R O J E C T S
+  ==========================================**/
+  .projects{
+    background-color: #adadad;
+  }
+  .individual_projects{
+    width: 100%;
+    border: 1px solid white;
+    margin: 20px;
+    height:300px;
+    transition:  all ease-in-out 300ms;
+  }
+  .individual_projects:hover{
+    transform: scale(1.03);
+    transition:  all ease-in-out 300ms;
+    border: 2px solid rgba(185, 97, 14, 0.3);
+  }
+  .tags{
+    position: absolute;
+    bottom:0;
+    left:-1px;
+    padding: 10px 20px 10px 5px;
+    font-size: x-large;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: rgba(185, 97, 14, 0.6);
+    color:#1c5da2;
+  }
+  .tags:hover{
+    color:white;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #proposal{
+    background-image: url("../images/watson-logo.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .9);
+  }
+  #statement{
+    background-image: url("../images/watson-logo.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .9);
+  }
+  #resume{
+    background-image: url("../images/resume-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .9);
+
+  }
+
+
+  /**==========================================
+    M E D I A   Q U E R I E S
+  ==========================================**/
+
+  @media only screen and (max-width: 992px) {
+    .header {
+      margin-top:-100px;
+      margin-bottom:0;
+    }
+    .contact{
+      margin-top:-150px;
+    }
+  }
+  @media only screen and (max-width: 770px) {
+    .header {
+      top:350px;
+      text-align: center;
+      margin-left: 0;
+    }
+    .navbar-nav .nav-link {
+      padding: 5px 0 5px 0;
+    }
+  }
