@@ -84,8 +84,8 @@
   .individual_projects{
     width: 100%;
     border: 1px solid white;
-    margin: 20px;
-    height:300px;
+    margin: 30px 40px;
+    height:200px;
     transition:  all ease-in-out 300ms;
   }
   .individual_projects:hover{
@@ -98,7 +98,7 @@
     bottom:0;
     left:-1px;
     padding: 10px 20px 10px 5px;
-    font-size: x-large;
+    font-size: medium;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     background: rgba(185, 97, 14, 0.6);
