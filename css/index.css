@@ -62,11 +62,34 @@
   #goof{
     font-family:'Major Mono Display', sans-serif;
   }
+
+  @media (min-width: 576px){
+    .modal-dialog {
+      max-width: 900px;
+    }
+  }
+
   /**==========================================
       A B O U T   M E
     ==========================================**/
+  .about_me{
+    background: transparent;
+    border:none;
+    font-size: xx-large;
+    margin-left: -50px;
+    transition: all ease-in-out 100ms;
+    color:#1c5da2;
+  }
+
+  .about_me:hover{
+    background: transparent;
+    border: none;
+    transition: all ease-in-out 100ms;
+    color:white;
+  }
   .about{
     margin-top:50px;
+
   }
   .sub-header{
     font-family:'Major Mono Display', sans-serif;
