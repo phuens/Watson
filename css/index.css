@@ -4,14 +4,13 @@
   }
 
   .front{
-    background-image: url("../images/background.gif");
+    background-image: url("../images/phuntsho_try2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
     height:100vh;
     animation:show ease-in 500ms;
-    background-attachment: fixed;
 
   }
   @keyframes show{
@@ -70,7 +69,6 @@
     font-family:'Major Mono Display', sans-serif;
     text-align: center;
   }
-
   .description_me{
     line-height: 35px;
     text-align: justify;
@@ -157,6 +155,9 @@
     }
   }
   @media only screen and (max-width: 770px) {
+    .about_image{
+      display: none;
+    }
     .header {
       top:350px;
       text-align: center;
@@ -165,4 +166,5 @@
     .navbar-nav .nav-link {
       padding: 5px 0 5px 0;
     }
+
   }
