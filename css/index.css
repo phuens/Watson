@@ -65,13 +65,19 @@
   /**==========================================
       A B O U T   M E
     ==========================================**/
+  .about{
+    margin-top:30px;
+  }
   .sub-header{
     font-family:'Major Mono Display', sans-serif;
     text-align: center;
+    text-decoration: underline;
   }
   .description_me{
-    line-height: 35px;
-    text-align: justify;
+    line-height: 45px;
+    text-align: center;
+    font-family:'Darker Grotesque', sans-serif;
+    font-size: 21px;
   }
   /**==========================================
     P R O J E C T S
