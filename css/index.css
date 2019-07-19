@@ -66,12 +66,12 @@
       A B O U T   M E
     ==========================================**/
   .about{
-    margin-top:30px;
+    margin-top:50px;
   }
   .sub-header{
     font-family:'Major Mono Display', sans-serif;
     text-align: center;
-    text-decoration: underline;
+    margin-bottom:30px;
   }
   .description_me{
     line-height: 45px;
@@ -79,6 +79,17 @@
     font-family:'Darker Grotesque', sans-serif;
     font-size: 21px;
   }
+  #phuntsho{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typehow 2000ms steps(20);
+    width: 10ch;
+  }
+  @keyframes typehow {
+    0% {width: 0;}
+    100% {width: 10ch;}
+  }
+
   /**==========================================
     P R O J E C T S
   ==========================================**/
