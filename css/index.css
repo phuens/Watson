@@ -63,7 +63,6 @@
   @media (min-width: 576px){
     .modal-dialog {
       max-width: 900px;
-      background:red;
     }
   }
 
@@ -95,59 +94,23 @@
   /**==========================================
     P R O J E C T S
   ==========================================**/
-  .projects{
-    background-color: white;
-  }
-  .individual_projects{
-    width: 100%;
-    border: 1px solid white;
+  .jumbo{
+    padding:0;
+    border:1px solid black;
     margin: 30px 40px;
-    height:220px;
-    transition:  all ease-in-out 300ms;
   }
-  .individual_projects:hover{
-    transform: scale(1.03);
-    transition:  all ease-in-out 300ms;
-    border: 2px solid rgba(185, 97, 14, 0.3);
+  .jumbo-picture{
+    padding:0;
+    margin:0;
   }
-  .tags{
-    position: absolute;
-    bottom:0;
-    left:-1px;
-    padding: 10px 20px 10px 5px;
-    font-size: medium;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background: rgba(185, 97, 14, 0.6);
+  .jumbo-bkg-image{
+    width:100%;
+    margin-bottom:10px;
+    height:240px;
+  }
+  .project-header{
     color:#1c5da2;
-  }
-  .tags:hover{
-    color:white;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  #proposal{
-    background-image: url("../images/watson-logo.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .9);
-  }
-  #statement{
-    background-image: url("../images/watson-logo.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .9);
-  }
-  #resume{
-    background-image: url("../images/resume-icon.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .9);
-
+    font-family:'Darker Grotesque', sans-serif;
   }
   /**==========================================
      F  O O T E R
