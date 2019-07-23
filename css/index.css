@@ -138,6 +138,11 @@
     .contact{
       margin-top:-150px;
     }
+    .jumbo-bkg-image{
+      width:100%;
+      margin-bottom:10px;
+      height:500px;
+    }
   }
   @media only screen and (max-width: 770px) {
     .about_image{
@@ -151,5 +156,7 @@
     .navbar-nav .nav-link {
       padding: 5px 0 5px 0;
     }
+
+
 
   }
