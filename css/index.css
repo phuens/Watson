@@ -69,6 +69,9 @@
   /**==========================================
       A B O U T   M E
     ==========================================**/
+  .modal-dialog{
+    box-shadow: 0 0 8px rgba(0, 0, 0, .9);
+  }
   .about_me{
     background: transparent;
     border:none;
