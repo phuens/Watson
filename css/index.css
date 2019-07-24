@@ -87,6 +87,7 @@
       opacity: 1;
     }
   }
+  /* THIS IS THE '?' MARK BUTTON RIGHT BESIDE THE HEADER NAME(PHUNTSHO NORBU) */
   .about_me{
     background: transparent;
     border:none;
@@ -95,13 +96,21 @@
     transition: all ease-in-out 100ms;
     color:#1c5da2;
   }
-
+  /* THIS IS THE HOVER OF THE '?' MARK BUTTON */
   .about_me:hover{
     background: transparent;
     border: none;
     transition: all ease-in-out 100ms;
     color:white;
   }
+
+  /* THE SMALL CIRCLE IMAGE IN THE MODAL DIALOG BOX */
+  .modal-img{
+    width:10%;
+    margin:0 20px 0 10px;
+  }
+
+  /* THIS IS THE DESCRIPTION WRITTEN UNDER THE MODAL DIALOG BOX */
   .description_me{
     line-height: 45px;
     text-align: center;
@@ -166,6 +175,33 @@
       margin-bottom:0;
       margin-left: 5%;
     }
+    #about-me-question-mark{
+      font-size: 80px;
+    }
+    /*---------------------------------------*/
+    .modal{
+      height:100%;
+    }
+    .modal-title{
+      font-size: 70px;
+    }
+    .modal-img{
+      width:20%;
+    }
+    .close{
+      font-size: 70px;
+    }
+    .description_me {
+       line-height: 75px;
+       font-size: 40px;
+     }
+    #description-me-first-paragraph{
+      margin-bottom: 50px;
+    }
+
+
+    /*---------------------------------------*/
+
     .slogan{
       font-size: xx-large;
     }

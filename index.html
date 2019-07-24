@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Hanalei|Darker+Grotesque|Monoton|ZCOOL+KuaiLe|Major+Mono+Display|Slabo+27px|Staatliches|Patrick+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Raleway|Hanalei|Darker+Grotesque|Monoton|ZCOOL+KuaiLe|Major+Mono+Display|Slabo+27px|Staatliches|Patrick+Hand" rel="stylesheet">
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -17,23 +17,28 @@
   <div class="container-fluid front">
     <div class="header">
         <p class="slogan" id="animate">Thomas J. Watson Fellow <a href="https://watson.foundation/fellowships/tj"><i class="far fa-question-circle" style="color:white;"></i> </a></p>
+
         <h1 class="phuntsho"> Phuntsho<br>Norbu
             <button type="button" class="btn btn-primary about_me" data-toggle="modal" data-target="#myModal">
-                <i class="far fa-question-circle"></i>
+                <i class="far fa-question-circle" id="about-me-question-mark"></i>
             </button>
         </h1>
+
         <p id="goof">&nbspA Goof since 1995</p>
     </div>
   </div>
 
   <!-- The Modal -->
   <div class="modal" id="myModal">
+
       <div class="modal-dialog">
+
           <div class="modal-content">
+
               <!-- Modal Header -->
               <div class="modal-header" style="margin:10px;">
                   <h4 class="modal-title " style="font-family: 'Major Mono Display',sans-serif">
-                      <img src="images/icon.ico" style="width:10%; margin:0 20px 0 10px;">
+                      <img src="images/icon.ico" class="modal-img">
                       About Me
                   </h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -42,7 +47,7 @@
               <!-- Modal body -->
               <div class="modal-body">
                   <div  class="description_me">
-                      <p>
+                      <p id="description-me-first-paragraph">
                           My name is <b id="phuntsho"> Phuntsho Norbu </b> and I am from <b>Bumthang, Bhutan</b>. I recently graduated with a B.A in
                           Computer Science and Mathematics-Economics from <b> Wheaton College </b> in Massachusetts, USA. I was recently awarded
                           the <a href="#"> <b>Thomas J. Watson Fellowship </b> </a>. This is a year-long grant for students to conduct independent research
@@ -128,40 +133,40 @@
         <div class="row justify-content-center">
             <hr>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h2 id="footer-contact" style="text-align: center; font-family: 'Raleway', sans-serif;"> C o n t a c t  &nbsp; M e</h2>
+                <h2 id="footer-contact" style="text-align: center; font-family: 'Bungee Outline', sans-serif;"> C o n t a c t  &nbsp; M e</h2>
                 <hr>
             </div>
             <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="border: 0 solid black; text-align: center;">
                 <p>
-                    <i class="fa fa-pencil-square-o" style="color:red"></i>
+                    <i class="fas fa-envelope-open"></i>
                     &nbsp; c.phuntshonorbu@gmail.com
                 </p>
-                <p>Currently in Tanzania</p>
-                <p>37 Maringo Street </p>
-                <p>Mikocheni, Dar Es Salaam, Tanzania</p>
+
+                <p><i class="fas fa-phone"></i> +(255) 17-988-420</p>
+                <p> <i class="fas fa-location-arrow"></i> 37 Maringo Street </p>
+                <p> Mikocheni, Dar Es Salaam, Tanzania</p>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 social-media" style="text-align: center">
-
                 <p>
                     <a href="https://github.com/phuens" class="footer-link">
                     <i class="fab fa-github-square"></i> &nbsp; Github</a>
                 </p>
-
                 <p>
                     <a href="https://www.linkedin.com/in/phuntsho-norbu/" class="footer-link">
                     <i class="fab fa-linkedin"></i> &nbsp; LinkedIn</a>
                 </p>
-
                 <p>
                     <a href="https://www.instagram.com/phuens/" class="footer-link">
-                    <i class="fab fa-instagram"></i> &nbsp; Instagram</a>
+                    <i class="fab fa-instagram "></i> &nbsp; Instagram</a>
                 </p>
 
                 <p>
                     <a href="https://www.youtube.com/channel/UCUWdiufzkd3yDDD-18oRGhA" class="footer-link">
                         <i class="fab fa-youtube"></i> &nbsp; Youtube</a>
                 </p>
-
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center">
+                Currently in Tanzania <i class="fas fa-snowflake fa-spin"></i>
             </div>
         </div>
 </div>
