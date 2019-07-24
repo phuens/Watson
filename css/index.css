@@ -39,7 +39,10 @@
     text-decoration: none;
     color: #1c5da2;
   }
-  a .slogan{
+  a {
+    text-decoration: none;
+  }
+  a:hover{
     text-decoration: none;
   }
   #animate {
@@ -72,6 +75,17 @@
     ==========================================**/
   .modal-dialog{
     box-shadow: 0 0 8px rgba(0, 0, 0, .9);
+    animation: ease-in show 300ms;
+  }
+  @keyframes show {
+    from{
+      transform: scale(0);
+      opacity:0;
+    }
+    to{
+      transform: scale(1);
+      opacity: 1;
+    }
   }
   .about_me{
     background: transparent;
