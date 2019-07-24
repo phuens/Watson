@@ -2,8 +2,8 @@
   *{
     transition: all ease-in-out 300ms;
   }
-  body{
-    min-width: 1100px;
+  html, body {
+    min-width: 1000px;
   }
   .front{
     background-image: url("../images/phuntsho_try2.jpg");
@@ -102,6 +102,11 @@
     padding:0;
     border:1px solid black;
     margin: 30px 40px;
+    transition: 300ms all ease-in;
+  }
+  .jumbo:hover{
+    transition: 300ms all ease-in;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .9);
   }
   .jumbo-picture{
     padding:0;
@@ -115,6 +120,14 @@
   .project-header{
     color:#1c5da2;
     font-family:'Darker Grotesque', sans-serif;
+    transition: 100ms all linear;
+  }
+  .project-header:hover{
+    color:#4b8598;
+  }
+  .jumbo a:hover{
+    transition: 100ms all linear;
+    text-decoration: none;
   }
   /**==========================================
      F  O O T E R
@@ -124,7 +137,6 @@
   }
   .social-media{
     font-size: 50px;
-    color: rgb(153, 102, 153);
     text-align: center;
   }
   /**==========================================
