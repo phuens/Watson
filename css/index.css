@@ -147,7 +147,9 @@
      F  O O T E R
    ==========================================**/
   .footer{
-    background: white;
+    padding-top:30px;
+    background: black;
+    color:white;
   }
   .social-media{
     font-size: 50px;
