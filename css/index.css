@@ -5,6 +5,10 @@
   html, body {
     min-width: 1000px;
   }
+  h1{
+      font-family:'Major Mono Display', sans-serif;
+      font-size: 70px;
+  }
   a {
     text-decoration: none;
   }
@@ -57,18 +61,15 @@
     0% {width: 0;}
     100% {width: 24ch;}
   }
-  h1{
-    font-family:'Major Mono Display', sans-serif;
-    font-size: 70px;
-  }
+  /*-----------------------------------
+      header: G   O   O   F
+  --------------------------------------*/
   #goof{
     font-family:'Major Mono Display', sans-serif;
   }
-  @media (min-width: 576px){
-    .modal-dialog {
-      max-width: 900px;
-    }
-  }
+
+
+
   /* THIS IS THE '?' MARK BUTTON RIGHT BESIDE THE HEADER NAME(PHUNTSHO NORBU) */
   .about_me{
     background: transparent;
@@ -120,7 +121,6 @@
     width:10%;
     margin:0 20px 0 10px;
   }
-
   /**-----------------------------------
       modal: B     O     D     Y
   --------------------------------------
@@ -132,11 +132,11 @@
     font-size: 21px;
   }
 
-
-
-
-
-
+  @media (min-width: 576px){
+      .modal-dialog {
+          max-width: 900px;
+      }
+  }
 
 
   /**==========================================
@@ -223,7 +223,6 @@
 
 
     /*---------------------------------------*/
-
     .slogan{
       font-size: xx-large;
     }
