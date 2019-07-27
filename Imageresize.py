@@ -1,6 +1,7 @@
 # DESCRIPTION: This program takes a folder of images and resizes all the images to the size 400x350
 # INPUT : User enters the Path file to the directory containing the images.
 # OUTPUT : Images will be resized and replace the original images.
+# PYTHON 2.7.16
 from PIL import Image  # Import Image function from PIL module
 import os,os.path	
 
@@ -32,7 +33,7 @@ def main():
 	#print(dirs)							
 	image_count = 0									# Keep track of amount of images formatted.
 	size = 400,350									# The size images to be formated into.
-   	for item in os.listdir(path):					# Loops through all the items in the directoy. 
+	for item in os.listdir(path):					# Loops through all the items in the directoy. 
    		if (item == ".DS_Store"):					# Need this since there is always .DS_Store file. 
    			continue
    		else:
@@ -42,10 +43,10 @@ def main():
    			img = im.resize(size,Image.ANTIALIAS)	# Resizes each image into the set given size(400x350)
    			img.save(path+item,"png") 				# Saves the image as its orginial filename in its original folder. 
    			image_count = image_count +1			# Counter.
-
-   	print("------------------")						# Just a Done message. 
-   	print("Formated %d images" % image_count)
-   	print("------------------")
+	
+	print("------------------")						# Just a Done message.
+	print("Formated %d images" % image_count)
+	print("------------------")
 
 
 if __name__== "__main__":
