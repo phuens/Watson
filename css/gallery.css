@@ -32,6 +32,7 @@ DIV CONTAINING THE IMAGES
     from{width:0;opacity:0}
     to{width:150px;opacity:1}
 }
+/* name of the places that appears upon hovering on the pictures*/
 .expand{
     position: absolute;
     color: #2177b7;
@@ -50,9 +51,6 @@ DIV CONTAINING THE IMAGES
     width:150px;
     opacity:1
 }
-
-
-
 
 /*-----------------------------------------------
 FOR THE SLIDE SHOW WHEN THE USER CLICKS ON AN IMAGE

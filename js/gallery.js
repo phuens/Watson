@@ -41,7 +41,7 @@ function populate(data) {
     let counter =0;
     while (counter < data_size){
         $(".enlarge").after(
-            "<div class='col-lg-3 col-md-3 col-sm-12 img-div'><img src='"+ data[counter].source+ "' class='image'><span class='expand'>"+data[counter].name+"</span></div>"
+            "<div class='col-lg-3 col-md-3 col-sm-12 img-div'><img alt='"+data[counter].description +"' src='"+ data[counter].source+ "' class='image'><span class='expand'>"+data[counter].name+"</span></div>"
         );
         counter++;
     }
