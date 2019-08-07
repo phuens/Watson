@@ -1,9 +1,9 @@
-$(function(){
+$(document).ready(function() {
     opacity();
-
     $.getJSON( "/Watson-web/images/gallery/gallery.json", function( data ) {
         populate(data);
     });
+    console.log("check");
 
 });
 /***
@@ -31,6 +31,11 @@ function opacity(){
         $(this).css('opacity','1');
     });
 }
+
+/***
+ * This function gets the image information and populates the html page.
+ * @param data - json object containing the image infromation.
+ */
 function populate(data) {
     let data_size = data.length;
     let counter =0;
