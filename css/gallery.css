@@ -1,0 +1,77 @@
+.header{
+    font-family:'Major Mono Display', sans-serif;
+    margin-top:20px;
+
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/*-----------------------------------------------
+DIV CONTAINING THE IMAGES
+-------------------------------------------------*/
+.img-div{
+    padding:0;
+}
+.image{
+    width:100%;
+    padding:5px;
+    transition: 100ms ease-out all;
+}
+.image:hover{
+    opacity:0.7;
+    transition: 100ms ease-in all;
+    cursor:pointer ;
+}
+.image:hover ~ .expand{
+    display: block;
+    transition: 100ms ease-in all;
+    animation: rotate 100ms ease;
+    animation-fill-mode: forwards;
+}
+@keyframes rotate {
+    from{width:0;opacity:0}
+    to{width:150px;opacity:1}
+}
+/* name of the places that appears upon hovering on the pictures*/
+.expand{
+    position: absolute;
+    color: #2177b7;
+    display: none;
+    transition: 200ms ease-out all;
+    top: 75%;
+    left: 2%;
+    width:0;
+    background: white;
+    padding: 0 5px 0 10px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.expand:hover{
+    display: block;
+    width:150px;
+    opacity:1
+}
+
+/*-----------------------------------------------
+FOR THE SLIDE SHOW WHEN THE USER CLICKS ON AN IMAGE
+-------------------------------------------------*/
+.enlarge{
+    position: absolute;
+    z-index: 10;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 800px;
+    border: 1px solid red;
+    height:700px;
+    display:none;
+}
+.enlarge-img{
+    width:90%;
+}
+button{
+    background: transparent;
+    font-size: xx-large;
+    border:none;
+    color:dodgerblue;
+}
+/*------------------------------------------------*/
