@@ -33,7 +33,7 @@ def createFile(path):
 			    <link rel="stylesheet" href="css/gallery.css">\n\
 			</head>\n\
 			<body>\n\
-			    <div class="container">\n\
+			    <div class="container-fluid">\n\
 			        <div  class="row justify-content-center">\n\
 			            <div class="col-lg-12 col-md-12 col-sm-12">\n\
 			                <h1 class="header"> Gallery </h1>\n\
