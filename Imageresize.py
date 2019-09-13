@@ -32,7 +32,7 @@ def main():
 													#directory of the path variable.
 	#print(dirs)							
 	image_count = 0									# Keep track of amount of images formatted.
-	size = 350,200									# The size images to be formated into.
+	size = 400,350									# The size images to be formated into.
 	for item in os.listdir(path):					# Loops through all the items in the directoy. 
    		if (item == ".DS_Store"):					# Need this since there is always .DS_Store file. 
    			continue
