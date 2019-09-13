@@ -41,7 +41,7 @@ def main():
    			width, height = im.size					# Stores the original width and height of the image.				
    			print("Image name: %s...  width:  %d. height:  %d" % (item[0:10],width,height))	# Print original width and height of the image with the name.
    			img = im.resize(size,Image.ANTIALIAS)	# Resizes each image into the set given size(400x350)
-   			img.save(path+item,"png") 				# Saves the image as its orginial filename in its original folder. 
+   			img.save(path+item,"png",optimize=True,quality=50) 			# Saves the image as its orginial filename in its original folder. 
    			image_count = image_count +1			# Counter.
 	
 	print("------------------")						# Just a Done message.

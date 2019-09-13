@@ -10,6 +10,7 @@ def start():
 	path = "/Users/phuntsho/Desktop/Watson/website/Watson-web/images/gallery/"  # Defualt the path for the directory.  
 	if not os.path.exists(path):
 		print("Path of the file is Invalid")	
+
 	return (path)
 
 
@@ -44,6 +45,11 @@ def createFile(path):
    		if (item == ".DS_Store"):					# Need this since there is always .DS_Store file. 
    			continue
    		else:
+   			im = Image.open(path+item)				# Opens each individual image in the folder.
+   			print('Before compress   : ',  os.path.getsize (path+item))
+   			im.save(path+item,"jpeg", optimize=True,quality=50)
+   			print('After compress   : ', os.path.getsize (path+item) )
+   			print('-----------------' )
    			#im = Image.open(path+item)				# Opens each individual image in the folder.
    			source = "<div class='col-lg-6 col-md-12 col-sm-12'><img alt=" + item + " src=" + local_path + item + "></div>\n"
    			f.write(source)
