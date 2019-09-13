@@ -45,7 +45,7 @@ def createFile(path):
    			continue
    		else:
    			#im = Image.open(path+item)				# Opens each individual image in the folder.
-   			source = "<div class='col-lg-6 col-md-6 col-sm-12'><img alt=" + item + " src=" + local_path + item + "></div>\n"
+   			source = "<div class='col-lg-6 col-md-12 col-sm-12'><img alt=" + item + " src=" + local_path + item + "></div>\n"
    			f.write(source)
 
    	f.write('	</div>\n\
