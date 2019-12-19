@@ -60,15 +60,14 @@ def createFile():
         <li class="has-children active">\n\
         <a href="Gallery.html">Gallery</a>\n\
         <ul class="dropdown">\n\
-        <li><a href="#">Tanzania</a></li>\n\
-        <li><a href="#">Zanzibar</a></li>\n\
-        <li><a href="#">Rwanda</a></li>\n\
-        <li><a href="#">Kenya</a></li>\n\
-        <li><a href="#">Mauritius</a></li>\n\
-        <li><a href="#">Thailand</a></li>\n\
-        <li><a href="#">Wheaton</a></li>\n\
-        <li><a href="#">Portraits</a></li>\n\
-        <li><a href="#">Misc</a></li>\n\
+        <li><a href="Tanzania.html">Tanzania</a></li>\n\
+        <li><a href="Zanzibar.html">Zanzibar</a></li>\n\
+        <li><a href="Rwanda.html">Rwanda</a></li>\n\
+        <li><a href="Kenya.html">Kenya</a></li>\n\
+        <li><a href="Mauritius.html">Mauritius</a></li>\n\
+        <li><a href="Wheaton.html">Wheaton</a></li>\n\
+        <li><a href="Portraits.html">Portraits</a></li>\n\
+        <li><a href="Misc.html">Misc</a></li>\n\
         </ul>\n\
         </li>\n\
         </ul>\n\
@@ -110,7 +109,6 @@ def createFile():
 		<div class="col-md-7">\n\
 		<div class="row mb-5">\n\
 		<div class="col-12 ">\n\
-		<h2 class="site-section-heading text-center">Nature Gallery</h2>\n\
 		</div>\n\
 		</div>\n\
 		</div>\n\
@@ -160,14 +158,6 @@ def createFile():
 		<!-----------------------------------------------------------------------------------------------\n\
 		                                 F O O T E R \n\
 		------------------------------------------------------------------------------------------------>\n\
-  		<div class="footer py-4">\n\
-    	<div class="container-fluid text-center">\n\
-      	<p>\n\
-      	<!-- Link back to Colorlib cant be removed. Template is licensed under CC BY 3.0. -->\n\
-      	Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>Template is licensed under CC BY 3.0. -->\n\
-      	</p>\n\
-    	</div>\n\
-  		</div>\n\
 		\n\
 		<script src="js/jquery-3.3.1.min.js"></script>\n\
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>\n\
