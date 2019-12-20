@@ -17,7 +17,7 @@ def createFile():
 	f.write('<!DOCTYPE html>\n\
 		<html lang="en">\n\
   		<head>\n\
-    	<title>Photon &mdash; Colorlib Website Template</title>\n\
+    	<title>Norbu\'s Gallery</title>\n\
     	<meta charset="utf-8">\n\
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">\n\
 	    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">\n\
