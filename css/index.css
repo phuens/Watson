@@ -66,6 +66,7 @@
   --------------------------------------*/
   #goof{
     font-family:'Major Mono Display', sans-serif;
+    color: #de9333;
   }
 
 
@@ -185,9 +186,9 @@
   }
 
   .footer-link{
-    color: #1c5da2;
-    text-align: center;
-    padding:10px;
+    color:#a99494;
+    margin-right: 25px;
+    
   }
   .address{
     font-size: 30px;
