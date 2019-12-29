@@ -176,6 +176,7 @@
     transition: 100ms all linear;
     text-decoration: none;
   }
+
   /**==========================================
      F  O O T E R
    ==========================================**/
@@ -254,7 +255,7 @@
       font-size: 60px;
     }
     .jumbo{
-      margin-bottom: 50px;
+      margin-bottom: 100px;
     }
     .jumbo-bkg-image{
       width:100%;
@@ -263,6 +264,7 @@
     }
     .media-description{
       font-size: 40px;
+      text-align: justify;
     }
     #footer-contact{
       font-size:45px;
