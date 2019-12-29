@@ -142,6 +142,10 @@
   /**==========================================
     P R O J E C T S
   ==========================================**/
+  #project-title{
+    text-align: left;
+    font-family: 'Major Mono Display', sans-serif;
+  }
   .jumbo{
     padding:30px;
     transition: 300ms all ease-in;
@@ -189,15 +193,12 @@
   ==========================================**/
 
   @media only screen and (max-width: 992px) {
-    .header {
-      margin-top:-100px;
-      margin-bottom:0;
-      margin-left: 5%;
+    .container {
+      max-width: 98%;
     }
-    #about-me-question-mark{
-      font-size: 80px;
-    }
+    
     /*---------------------------------------*/
+    /*-------------- M O D A L --------------*/
     .modal{
       height:100%;
     }
@@ -218,9 +219,16 @@
     #description-me-first-paragraph{
       margin-bottom: 50px;
     }
-
-
     /*---------------------------------------*/
+    /*----- H O M E P A G E  T I T L E ------*/
+    .header {
+      margin-top:-100px;
+      margin-bottom:0;
+      margin-left: 5%;
+    }
+    #about-me-question-mark{
+      font-size: 80px;
+    }
     .slogan{
       font-size: xx-large;
     }
@@ -230,16 +238,26 @@
     #goof{
       font-size: xx-large;
     }
+    /*---------------------------------------*/
+    /* S T U F F - S U B C A T E G O R I E S */
+
     #project-title{
       font-size: 75px;
+      text-align: center;
     }
     .project-header{
       font-size: 60px;
     }
+    .jumbo{
+      margin-bottom: 50px;
+    }
     .jumbo-bkg-image{
       width:100%;
       margin-bottom:10px;
-      height:550px;
+      height:700px;
+    }
+    .media-description{
+      font-size: 40px;
     }
     #footer-contact{
       font-size:45px;
@@ -248,6 +266,9 @@
       font-size: 30px;
     }
   }
+  /**==========================================
+    M E D I A   Q U E R I E S
+  ==========================================**/
   @media only screen and (max-width: 770px) {
     .about_image{
       display: none;
