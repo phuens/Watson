@@ -161,8 +161,8 @@
   }
   .jumbo-bkg-image{
     width:100%;
-    margin-bottom:10px;
-    height:240px;
+    margin-bottom:25px;
+    height:300px;
   }
   .project-header{
     color:#1c5da2;
@@ -258,9 +258,9 @@
       margin-bottom: 100px;
     }
     .jumbo-bkg-image{
-      width:100%;
-      margin-bottom:10px;
-      height:700px;
+      width: 100%;
+      margin-bottom: 50px;
+      height: 900px;
     }
     .media-description{
       font-size: 40px;
