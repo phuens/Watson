@@ -60,6 +60,7 @@ def createFile():
         <li class="has-children active">\n\
         <a href="Gallery.html">Gallery</a>\n\
         <ul class="dropdown">\n\
+        <li><a href="Mongolia.html">Mongolia</a></li>\n\
         <li><a href="Tanzania.html">Tanzania</a></li>\n\
         <li><a href="Zanzibar.html">Zanzibar</a></li>\n\
         <li><a href="Rwanda.html">Rwanda</a></li>\n\
@@ -152,7 +153,7 @@ def createFile():
 #========================================================================================================================
 #||||||||||||||||||||||||| G E N E R A T I N G    P I C T U R E S |||||||||||||||||||||||||||||||||||||||||||||||||||||||
 #========================================================================================================================
-   	f.write('</div>\n\
+	f.write('</div>\n\
     	</div>\n\
   		</div>\n\
 		<!-----------------------------------------------------------------------------------------------\n\
