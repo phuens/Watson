@@ -10,7 +10,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding-top:30px;
+    padding:10px 0;
     background: black;
     color:white;
 }
@@ -33,4 +33,8 @@
         width:100%;
         height:155px;
     }
+    .desc{
+        font-size: 10px;
+    }
+
 }
