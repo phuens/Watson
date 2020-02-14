@@ -27,6 +27,15 @@
     padding:10px;
     font-family: "Shadows Into Light", sans-serif;
 }
+.img-1 {
+     transform: perspective(2000px) rotateY(45deg);
+     transition: 0.1s ease-in all;
+     box-shadow: 10px grey;
+}
+.img-1:hover{
+    transform: perspective(3000px) rotateY(30deg);
+    transition: 0.3s ease-out all;
+}
 
 @media only screen and (max-width: 1000px) {
     .cover{
@@ -35,6 +44,15 @@
     }
     .desc{
         font-size: 10px;
+    }
+    .img-1 {
+     transform: perspective(2000px) rotateY(35deg);
+     transition: 0.1s ease-in all;
+     box-shadow: 10px grey;
+    }
+    .img-1:hover{
+        transform: perspective(3000px) rotateY(15deg);
+        transition: 0.3s ease-out all;
     }
 
 }
