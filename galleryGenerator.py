@@ -71,6 +71,9 @@ def createFile():
         <li><a href="Misc.html">Misc</a></li>\n\
         </ul>\n\
         </li>\n\
+        <li class="">\n\
+        <a href="https://phuens.github.io/Watson/Books/books.html">Books</a>\n\
+        </li>\n\
         </ul>\n\
         </nav>\n\
         </div>\n\
@@ -110,7 +113,10 @@ def createFile():
 		<div class="col-md-7">\n\
 		<div class="row mb-5">\n\
 		<div class="col-12 ">\n\
-		</div>\n\
+		<h2 class="site-section-heading text-center">')
+	f.write(folder_name)
+	f.write(
+		'</h2></div>\n\
 		</div>\n\
 		</div>\n\
 		</div>\n\
@@ -119,9 +125,6 @@ def createFile():
 #========================================================================================================================
 #||||||||||||||||||||||||| G E N E R A T I N G    P I C T U R E S |||||||||||||||||||||||||||||||||||||||||||||||||||||||
 #========================================================================================================================
-
-
-
 	
 	local_path = "../images/gallery/" + folder_name+"/"	
 	path = "/Users/phuntsho/Desktop/Watson/website/Watson-web/images/gallery/"+folder_name+"/"
