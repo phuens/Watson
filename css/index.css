@@ -185,7 +185,7 @@ M     E     D     I     A           Q     U     E     R     I     E     S
 =================================================================================================**/
 @media only screen and (max-width: 992px) {
 .front{
-background-image: url("../images/icons/Portraits-mobile.png");
+background-image: url("../images/icons/Portraits-mobile.jpg");
 }
 .container-fluid{
 	padding: 0 !important;
