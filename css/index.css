@@ -20,7 +20,7 @@ H     E     A     D     E     R
 /**
 Description: This is the whole container of the landing page. **/
 .front{
-background-image: url("../images/icons/phuntsho_try2.jpg");
+background-image: url("../images/icons/Portraits.jpg");
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -184,6 +184,12 @@ font-size: 30px;
 M     E     D     I     A           Q     U     E     R     I     E     S
 =================================================================================================**/
 @media only screen and (max-width: 992px) {
+.front{
+background-image: url("../images/icons/Portraits-mobile.png");
+}
+.container-fluid{
+	padding: 0 !important;
+}
 .container {
 max-width: 98%;
 }
