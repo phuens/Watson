@@ -79,7 +79,10 @@ Description: This is the first sentence: 'Thomas J. Watson Fellow'**/
 	transition: all ease-in-out 100ms;
 	color:white;
 }
-
+/**THIS IS FOR SOCIAL MEDIA ICONS**/
+.social_media_icon {
+		color: #ffffff9e;
+}
 /*---------------------------------------------------------------------------------
 M     O     D     A     L
 ---------------------------------------------------------------------------------*/
@@ -187,7 +190,7 @@ Description: this is the actual description of myself. **/
 	}
 	/*----- H O M E P A G E  T I T L E ------*/
 	.header {
-		margin-top:-100px;
+		margin-top:-90px;
 		margin-bottom:0;
 		margin-left: 5%;
 	}
@@ -195,6 +198,7 @@ Description: this is the actual description of myself. **/
 		font-size: 80px;
 	}
 	.slogan{
+		color:#bcbdbd;
 		font-size: xx-large;
 	}
 	.phuntsho{
