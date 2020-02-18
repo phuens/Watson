@@ -21,7 +21,7 @@ L 	A 	N 	D 	I 	N 	G 		P 	I 	C 	T 	U 	R 	E
 /**
 Description: This is the whole container of the landing page. **/
 .front{
-	background-image: url("../images/icons/Portraits.jpg");
+	background-image: url("../images/icons/Portraits-compressed.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -178,7 +178,7 @@ Description: this is the actual description of myself. **/
 
 @media only screen and (max-width: 992px) {
 	.front{
-		background-image: url("../images/icons/Portraits-mobile.jpg");
+		background-image: url("../images/icons/Portraits-mobile-compressed.jpg");
 		width:100%;
 	}
 	/** THIS IS THE SIZE OF THE WHOLE SECTOR DIV. BETTER AT 98 THAN 100**/
