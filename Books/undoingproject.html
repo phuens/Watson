@@ -21,33 +21,100 @@
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="../css/books.css" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153603735-1"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-153603735-1');
     </script>
+
     <style>
     #book-title{
-    padding-left: 0 !important;
+      padding-left: 0 !important;
     }
     h2{
-    display: inline !important
+      display: inline !important
+    }
+    .btn-primary{ 
+      margin-left: 20px;
+      border-radius: 5px;
     }
     .answer{
-    margin: 0 50px;
+      margin: 0 50px;
     }
     .power_duo{
-    width:100%;
+      width:100%;
     }
+    /**------------------ LOAD SPINNER ---------------**/
+    .lds-hourglass {
+      display: none; /*inline-block*/
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+    .lds-hourglass:after {
+      content: " ";
+      display: block;
+      border-radius: 50%;
+      width: 0;
+      height: 0;
+      margin: 8px;
+      box-sizing: border-box;
+      border: 32px solid #dfc;
+      border-color: #dfc transparent #dfc transparent;
+      animation: lds-hourglass 1.2s infinite;
+    }
+    @keyframes lds-hourglass {
+      0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      }
+      50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      100% {
+        transform: rotate(1800deg);
+      }
+    }
+    .value_div{
+      display:none;
+      margin-left: 20px;
+    }
+    #number_value{
+      margin-left: 20px;
+      color:#007bff;
+    }
+    #user_name{
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-top:20px;
+    }
+    input{
+      margin-left: 20px;
+    }
+    /**----------------------------------------------**/
     @media only screen and (max-width: 1000px) {
-    #book-title{
-    padding: 20px 10px !important;
-    background:#193a750f;
-    }
-    h2{
-    display: block !important;
-    }
+      #book-title{
+        padding: 20px 10px !important;
+        background:#193a750f;
+      }
+      h2{
+        display: block !important;
+      }
+      input[type=radio]{
+        margin-top:20px;
+        transform: scale(2);
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -webkit-transform: scale(2);
+        -o-transform: scale(2);
+      }
     }
     </style>
   </head>
@@ -128,11 +195,37 @@
             <div class="col-12" id="book-title">
               <h2><b>The Undoing Project</b></h2> &nbsp <a href="https://en.wikipedia.org/wiki/Michael_Lewis"> Michael Lewis </a>
             </div>
+
             <br><br>
             <p>
               The undoing project is about two psychologists Daniel Kahneman and Amos Tversky and the friendship that has given us behavioural economics. Before the two power duos, economists always assumed and believed that people were rational and hence made rational decisions. Kahneman and Tversky disproved this with several experiments that are sprinkled throughout the book. I personally loved reading about these experiments which were mostly questionnaires because it allowed me to participate and test myself while reading it. Just like Kahneman and Tversky presented, I made decisions that proved their point at every question.
             </p>
+            <hr>
             <br>
+            <h2>EXPERIMENT TIME!</h2>
+            <p><b>Let us run a small experiment similar to what Kahneman and Tversky did in the book.</b></p>
+            <p>1. &nbsp Please hit the generate button below to generate a random <b> number between 0 - 100 </b></p>
+            <div id="generator">
+                <button type="button" id = "number_generate_button"class="btn btn-primary">Generate</button>
+                <div class="lds-hourglass"></div>
+                <h5 class="value_div"> Your number is: <h2 id="number_value"></h2></h5>
+            </div>
+            <br>
+            <form class="options">
+                <p>2. &nbsp How many times do you think the word "Danny" (Daniela Kahneman) comes up in the whole book (The Undoing Project)? </p>
+                <input type="radio" id="option-1" name="options" value="option-1">&nbsp&nbsp <label class="wrong" for="option-1" > 670</label><br>
+                <input type="radio" id="option-2" name="options" value="option-2">&nbsp&nbsp <label class="wrong" for="option-2"> 732</label><br>
+                <input type="radio" id="option-3" name="options" value="option-3">&nbsp&nbsp <label id ="right" class="wrong" for="option-3"> 869</label><br>
+                <input type="radio" id="option-4" name="options" value="option-4">&nbsp&nbsp <label class="wrong" for="option-4"> 1012</label><br>
+                <input type="radio" id="option-5" name="options" value="option-5">&nbsp&nbsp <label class="wrong" for="option-5"> 1217</label>
+            </form>
+            <input type="input" id="user_name" name="user_name" placeholder="You name please">&nbsp&nbsp
+            <button type="button" id="submit" class="btn btn-primary">Submit</button>
+            <br>
+            <br>
+            <p id="explanation"></p>
+            <br>
+            <hr>
             <p> <b>What is the difference between judgement and decision ?</b><br>
               I honestly did not give much thought to this because I saw them as one. But read the next line to see Amos define the difference and if you don't think that is crazy genius, then either I am stupid or you dont appreciate the fine silver lining that this man sees. <br>
               <div class="answer"><i><i class="fa fa-quote-left fa-3x fa-pull-left"></i>" A person making a judgement was assigning odds. How likely is it that guy will be a good NBA player? Is the shadow on the X-ray cancer? Not every judgement is followed by a decision but every decision implies some judgement. "</i><i class="fa fa-quote-right fa-3x fa-pull-right"></i></div>
@@ -149,7 +242,6 @@
           </div>
         </div>
       </div>
-      
       <!----------------------------------------------------------------------------------------------------------------------
       | | | | | | | | | | | | | | | | | | |   F       O       O       T       E       R  | | | | | | | | | | | | | | | | | | |
       ----------------------------------------------------------------------------------------------------------------------->
@@ -185,8 +277,77 @@
       
       <script>
       $(document).ready(function(){
-      $('#lightgallery').lightGallery();
+        let generate_button = false;
+        $('#lightgallery').lightGallery();
+        $('#number_generate_button').click(function(){
+          generate_button = true;
+          $("#number_generate_button").css("display", "none")
+          $(".lds-hourglass").css("display", "inline-block")
+          setTimeout(
+            function() 
+            {
+              $(".lds-hourglass").css("display", "none")
+              $(".value_div").css("display", "block")
+              let num = 0; 
+              if (Math.random() < 0.5){
+                console.log("below 0.5")
+                num = 93; 
+              }
+              else{
+                console.log("above 0.5")
+                num = 7
+              }
+              $("#number_value").append(num);
+            }, 1300);
+        });
+
+        $("#submit").click(function(){
+          if (generate_button == true){
+            if ($('input[name="options"]').is(':checked')){
+              if($("#user_name").val() != ''){
+                console.log($("#user_name"))
+                $("input:radio").attr('disabled',true);
+                $(".wrong").css("color", "red")
+                $("#right").css("color", "#007bff")
+                let explanation = "According to the experiment ran by Kahneman and Tversky, when the participants were given a larger number at the first step, they overestimated the answer. However, when the participants received a smaller number, they underestimated it. I dont recall the exact details of the experiment so I tried to make it as close to their experiment as I remember. Does this apply to the result you have? The number generator actually only gives you either a 7 or a 93. I wanted to see the difference between the choices people make when they are given either a 7 or 93. <br> <br> This is an important revelation because we are constantly taught to trust our gut and our instinct but our gut and instinct can be easily influenced without even us knowing. Let me know about your result"
+                $("#explanation").append(explanation)
+              
+                var firebaseConfig = {
+                  apiKey: "AIzaSyB_nlDaSmfaoDEmjaTqWtQvvHI14g0WMtk",
+                  authDomain: "undoing-project-experiment.firebaseapp.com",
+                  databaseURL: "https://undoing-project-experiment.firebaseio.com",
+                  projectId: "undoing-project-experiment",
+                  storageBucket: "undoing-project-experiment.appspot.com",
+                  messagingSenderId: "846438670914",
+                  appId: "1:846438670914:web:249f2e989fe124f17703db",
+                  measurementId: "G-VTBCQ4FVTK"
+                };
+                // Initialize Firebase
+                let val = $('input[name="options"]:checked').val()
+                user_answer_result = $('label[for=' + val + ']').text()
+                let user_name = $("#user_name").val() + Math.round(Math.random()*10000)
+
+                firebase.initializeApp(firebaseConfig);
+                firebase.database().ref(user_name).set({
+                  number_generated: $("#number_value").text(),
+                  user_answer: user_answer_result
+                })
+              }
+              else{alert("Please input your name")}
+            }  
+            else{alert("Please select a value")}
+          }
+          else{alert("Please Generate a random number")}
+        });
       });
       </script>
     </body>
   </html>
+
+
+
+
+
+
+
+
