@@ -130,6 +130,7 @@ Description: this is the actual description of myself. **/
 .jumbo{
 	padding:30px;
 	transition: 300ms all ease-in;
+	
 }
 /**HOVER FUNCTION FOR THE WHOLE SECTOR**/
 .jumbo:hover{
