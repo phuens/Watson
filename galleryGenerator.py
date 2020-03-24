@@ -60,6 +60,7 @@ def createFile():
         <li class="has-children active">\n\
         <a href="Gallery.html">Gallery</a>\n\
         <ul class="dropdown">\n\
+        <li><a href="Nepal.html">Nepal</a></li>\n\
         <li><a href="Mongolia.html">Mongolia</a></li>\n\
         <li><a href="Tanzania.html">Tanzania</a></li>\n\
         <li><a href="Zanzibar.html">Zanzibar</a></li>\n\
@@ -147,9 +148,9 @@ def createFile():
    			im.save(path+item,"jpeg", optimize=True,quality=50) # image compression
    			#im = Image.open(path+item)				# Opens each individual image in the folder.
    			print(local_path+item)
-   			source = '<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="'+local_path + item+'" data-sub-html="\n\
+   			source = '\n\n<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="'+local_path + item+'" data-sub-html="">\n\
           			<a href="#"><img src="'+local_path + item+'" alt="'+item+'" class="img-fluid"></a>\n\
-        			</div>'
+        			</div>\n'
    			f.write(source)
 
 
