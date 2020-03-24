@@ -58,7 +58,7 @@ def createFile():
         <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">\n\
         <li><a href="gallery.html">Home</a></li>\n\
         <li class="has-children active">\n\
-        <a href="Gallery.html">Gallery</a>\n\
+        <a href="https://phuens.github.io/Watson/gallery_templates/gallery.html">Gallery</a>\n\
         <ul class="dropdown">\n\
         <li><a href="Nepal.html">Nepal</a></li>\n\
         <li><a href="Mongolia.html">Mongolia</a></li>\n\
