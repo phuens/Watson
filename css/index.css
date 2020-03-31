@@ -3,6 +3,7 @@
 }
 html, body {
 	min-width: 900px;
+	background-color: #E0E5EC;
 }
 h1{
 	font-family:'Major Mono Display', sans-serif;
@@ -130,6 +131,7 @@ Description: this is the actual description of myself. **/
 .jumbo{
 	padding:30px;
 	transition: 300ms all ease-in;
+	margin-top:30px;
 	
 }
 /**HOVER FUNCTION FOR THE WHOLE SECTOR**/
@@ -150,12 +152,23 @@ Description: this is the actual description of myself. **/
 	color:#1c5da2;
 	font-family:'Darker Grotesque', sans-serif;
 	transition: 100ms all linear;
+	background-color:#E0E5EC;
+	border: none;
+	border-radius: 6px;
+	box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5);
+	font-weight: 700;
+	padding: 15px 25px;
+	overflow: hidden;
+	position: relative;
 }
 /**CHANGE THE COLOR WHEN THE USERS CLICKS ON THE HEADER**/
 .project-header:hover{
 	color:#4b8598;
 }
-
+.middle{
+	border-right: 1px solid rgb(240, 240, 240);
+	border-left: 1px solid rgb(240, 240, 240);
+}
 /**------------------------------------------------------------------------
 	F  		O 		O 		T 		E 		R
 -------------------------------------------------------------------------**/
@@ -240,15 +253,29 @@ Description: this is the actual description of myself. **/
 	}
 	.jumbo{
 		margin-bottom: 100px;
+		margin-top:0px;
 	}
 	.jumbo-bkg-image{
 		width: 100%;
 		margin-bottom: 50px;
 		height: 900px;
 	}
+	hr{ 
+		height: 1px;
+	    color: rgb(165, 143, 143);
+		background-color: rgb(165, 143, 143);
+		border: none;
+	}
+	.top-hr{
+		margin-top:50px;
+		bottom-margin: 15px;
+	}
 	.media-description{
 		font-size: 40px;
 		text-align: justify;
+	}
+	.middle{
+		border:0px;
 	}
 	#footer-contact{
 		font-size:45px;
