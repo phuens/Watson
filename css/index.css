@@ -164,6 +164,7 @@ Description: this is the actual description of myself. **/
 /**CHANGE THE COLOR WHEN THE USERS CLICKS ON THE HEADER**/
 .project-header:hover{
 	color:#4b8598;
+	box-shadow: -5px -5px 10px rgba(255,255,255, 0.5), 9px 9px 16px rgb(163,177,198,0.6) inset;
 }
 .middle{
 	border-right: 1px solid rgb(240, 240, 240);
@@ -250,6 +251,7 @@ Description: this is the actual description of myself. **/
 	}
 	.project-header{
 		font-size: 60px;
+		padding: 30px 30px;
 	}
 	.jumbo{
 		margin-bottom: 100px;
