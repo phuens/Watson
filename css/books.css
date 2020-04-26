@@ -33,8 +33,7 @@
      box-shadow: 10px grey;
 }
 .img-1:hover{
-    transform: perspective(3000px) rotateY(30deg);
-    transform: perspective(3000px) rotateY(30deg);
+    transform: perspective(700px) rotateY(30deg);
     transition: 0.3s ease-out all;
 }
 
