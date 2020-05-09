@@ -60,6 +60,7 @@ def createFile():
         <li class="has-children active">\n\
         <a href="https://phuens.github.io/Watson/gallery_templates/gallery.html">Gallery</a>\n\
         <ul class="dropdown">\n\
+        <li><a href="Bhutan.html">Bhutan</a></li>\n\
         <li><a href="Nepal.html">Nepal</a></li>\n\
         <li><a href="Mongolia.html">Mongolia</a></li>\n\
         <li><a href="Tanzania.html">Tanzania</a></li>\n\
@@ -145,7 +146,7 @@ def createFile():
    		else:
    			im = Image.open(path+item)				# Opens each individual image in the folder.
    			print('working on : ', item)
-   			im.save(path+item,"jpeg", optimize=True,quality=50) # image compression
+   			im.save(path+item,"jpeg", optimize=True,quality=20) # image compression
    			#im = Image.open(path+item)				# Opens each individual image in the folder.
    			print(local_path+item)
    			source = '\n\n<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="'+local_path + item+'" data-sub-html="">\n\
