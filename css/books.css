@@ -1,4 +1,7 @@
 
+*{
+     transition: 0.1s ease-in all;
+}
 .cover{
     width:70%;
     height:250px;
@@ -36,7 +39,20 @@
     transform: perspective(700px) rotateY(30deg);
     transition: 0.3s ease-out all;
 }
+.two-weeks-three-books{
+    margin-top:100px;
+    background: black;
+    height: 500px;
+}
+.info-2weeks3books{
+    color:#76ffa1;
+}
 
+.info-2weeks3books:hover{
+    cursor: pointer;
+     color:white;
+      transition: 0.3s ease-out all;
+}
 
 @media only screen and (max-width: 1000px) {
     .cover{
