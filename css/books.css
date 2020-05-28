@@ -55,6 +55,9 @@
     background: black;
     padding-bottom:50px;
 }
+.selection::selection{
+    background:#ffc107;
+}
 .info-2weeks3books{
     color:#76ffa1;
 }
