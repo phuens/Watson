@@ -34,8 +34,8 @@ def main():
 	image_count = 0									# Keep track of amount of images formatted.
 
 	#*********************************************
-	#size = 400, 350 # FOR HOMEPAGE COVER		 *
-	size = 265,400	 # FOR BOOKS IN BOOK REVIEW  *
+	size = 400, 350 # FOR HOMEPAGE COVER		 *
+	#size = 265,400	 # FOR BOOKS IN BOOK REVIEW  *
 	#*********************************************
 
 	for item in os.listdir(path):					# Loops through all the items in the directoy. 
@@ -46,7 +46,7 @@ def main():
    			width, height = im.size					# Stores the original width and height of the image.				
    			print("Image name: %s...  width:  %d. height:  %d" % (item[0:10],width,height))	# Print original width and height of the image with the name.
    			img = im.resize(size,Image.ANTIALIAS)	# Resizes each image into the set given size(400x350)
-   			img.save(path+item,"png",optimize=True,quality=50) 			# Saves the image as its orginial filename in its original folder. 
+   			img.save(path+item,"png",optimize=True,quality=10) 			# Saves the image as its orginial filename in its original folder. 
    			image_count = image_count +1			# Counter.
 	
 	print("------------------")						# Just a Done message.
