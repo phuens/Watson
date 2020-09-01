@@ -1,118 +1,170 @@
-
-*{
-     transition: 0.1s ease-in all;
+* {
+  transition: 0.1s ease-in all;
 }
-.cover{
-    width:70%;
-    height:250px;
-    display: block;
-    margin-left: auto;
-    margin-right: 300px;
-    margin-top:50px;
-    box-shadow: -17px 13px 10px 7px rgba(0,0,0,.2);
+.cover {
+  width: 70%;
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: 300px;
+  margin-top: 50px;
+  box-shadow: -17px 13px 10px 7px rgba(0, 0, 0, 0.2);
 }
-.reviewed-title{
-    width:70%;
-    height:250px;
-    display: block;
-    margin-left: auto;
-    margin-right: 300px;
-    margin-top:50px;
+.reviewed-title {
+  width: 70%;
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: 300px;
+  margin-top: 50px;
 }
-.footer{
-    width: 100%;
-    padding:10px 0;
-    background: black;
-    color:white;
+.footer {
+  width: 100%;
+  padding: 10px 0;
+  background: black;
+  color: white;
 }
-.progress{
-    cursor: not-allowed;
-    -webkit-filter: grayscale(0.9);
+.progress {
+  cursor: not-allowed;
+  -webkit-filter: grayscale(0.9);
 }
-.progress-desc{
-    background: black !important;
+.progress-desc {
+  background: black !important;
 }
-.desc{
-    position:absolute;
-    bottom:0px;
-    color:white;
-    color: white;
-    background: #ffad42ad;
-    padding:3px 5px;
-    font-family: "Shadows Into Light", sans-serif;
+.desc {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  color: white;
+  background: #ffad42ad;
+  padding: 3px 5px;
+  font-family: "Shadows Into Light", sans-serif;
 }
 .img-1 {
-     transform: perspective(2000px) rotateY(0deg);
-     transition: 0.1s ease-in all;
-     box-shadow: 10px grey;
+  transform: perspective(2000px) rotateY(0deg);
+  transition: 0.1s ease-in all;
+  box-shadow: 10px grey;
 }
-.img-1:hover{
-    transform: perspective(700px) rotateY(30deg);
-    transition: 0.3s ease-out all;
+.img-1:hover {
+  transform: perspective(700px) rotateY(30deg);
+  transition: 0.3s ease-out all;
 }
-.two-weeks-three-books{
-    margin-top:100px;
-    background: black;
-    padding-bottom:50px;
+.two-weeks-three-books {
+  margin-top: 100px;
+  background: black;
+  padding-bottom: 50px;
 }
-.selection::selection{
-    background:#ffc107;
+.selection::selection {
+  background: #ffc107;
 }
-.info-2weeks3books{
-    color:#76ffa1;
+.info-2weeks3books {
+  color: #76ffa1;
 }
 
-.info-2weeks3books:hover{
-    cursor: pointer;
-     color:white;
-      transition: 0.3s ease-out all;
+.info-2weeks3books:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease-out all;
 }
-.books2weeks{
-    width:70%;
-    height:250px;
-    display: block;
-    margin-top:20px;
+.books2weeks {
+  width: 70%;
+  height: 250px;
+  display: block;
+  margin-top: 20px;
 }
-.book-list-title{
-    color:#0c53c0;
+.book-list-title {
+  color: #0c53c0;
+  font-size: larger;
 }
-.book-list-title:hover{
-    cursor: pointer;
+/* .book-list-title:hover {
+  cursor: pointer;
 }
-.book-list{
-    display:none;
+.book-list {
+  display: none;
+} */
+.book-read-list {
+  color: #0c53c0;
+  font-size: larger;
+}
+/* .book-read-list:hover {
+  cursor: pointer;
+} */
+/* .read-list {
+  display: none;
+} */
+
+/* NEW REVIEW STYLE BEGINS FROM HERE! started on August 31 2020 */
+.new-review-style {
+  padding: 30px;
+}
+.new-image-container {
+  padding: 0 !important;
+}
+.new-review-book-image {
+  height: auto;
+  width: 100%;
+  margin: 0 !important;
+}
+.new-review-content-container {
+  margin-left: 30px;
+}
+.new-review-content {
+  text-align: justify;
+}
+.star-rating {
+  float: right;
+}
+.star-checked {
+  color: gold;
 }
 
 @media only screen and (max-width: 1000px) {
-    .cover{
-        width:100%;
-        height:110px;
-        box-shadow: -8px 9px 6px 7px rgba(0,0,0,.2);
-    }
-    .reviewed-title{
-         width:100%;
-        height:110px;
-    }
-    .books2weeks{
-        width:160%;
-        height:150px;
-        display: block;
-        margin-top:20px;
-    }   
-    .books2weeks-parent{
-        margin-right:30px;
-    }
-    .desc{
-        font-size: 10px;
-    }
-    .img-1 {
-     transform: perspective(2000px) rotateY(0deg);
-     transition: 0.1s ease-in all;
-     box-shadow: 2px grey;
-    }
-    .img-1:hover{
-        transform: perspective(3000px) rotateY(15deg);
-        transition: 0.3s ease-out all;
-    }
+  .cover {
+    width: 100%;
+    height: 110px;
+    box-shadow: -8px 9px 6px 7px rgba(0, 0, 0, 0.2);
+  }
+  .reviewed-title {
+    width: 100%;
+    height: 110px;
+  }
+  .books2weeks {
+    width: 160%;
+    height: 150px;
+    display: block;
+    margin-top: 20px;
+  }
+  .books2weeks-parent {
+    margin-right: 30px;
+  }
+  .desc {
+    font-size: 10px;
+  }
+  .img-1 {
+    transform: perspective(2000px) rotateY(0deg);
+    transition: 0.1s ease-in all;
+    box-shadow: 2px grey;
+  }
+  .img-1:hover {
+    transform: perspective(3000px) rotateY(15deg);
+    transition: 0.3s ease-out all;
+  }
 
+  /* New review style */
+  .new-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .new-review-book-image {
+    height: 300px;
+    width: auto;
+    margin: 0 !important;
+  }
+  .new-review-content-container {
+    margin-left: 0px;
+  }
+
+  .star-rating {
+    float: none;
+  }
 }
