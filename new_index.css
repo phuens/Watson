@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+}
+
+/* biggets parent container */
+.homepage {
+    height: 100vh;
+    background-image: url("./images/new_homepage/wallpaper-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* filter: blur(5px); */
+}
+
+.homepage-slogan {
+    text-align: center;
+    font-family: "Major Mono Display", sans-serif;
+    margin-top: 250px
+}
+
+/* this is phuntsho norbu */
+.name-title {
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.541);
+}
+
+/* a goof since 1995 */
+.tagline {
+    color: white
+}
+
+/* explore button under the tagline*/
+.explore-button {
+    font-size: xx-large;
+    font-family: "Cabin Sketch", sans-serif;
+}
+
+
+/* ===================================== */
+
+/* navbar-parent-div */
+.navbar-parent {
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.795);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 30px;
+    transition: ease-in all 200ms;
+    display: none;
+}
+
+/* close button at the top right  */
+.close-navbar-button i {
+    float: right;
+    font-size: xxx-large;
+    margin-right: 35px;
+    color: #ababab;
+    cursor: pointer;
+    transition: all ease 200ms;
+}
+
+/* close button at top right */
+.close-navbar-button i:hover {
+    transition: all ease 200ms;
+    transform: rotate(90deg);
+    color: red;
+}
+
+/* individual section/catgeory parent div */
+.section-headers {
+    background: #c4c4c4;
+    height: 140px;
+    padding: 0 !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 40px;
+}
+
+/* image for individual section */
+.section-image {
+    width: 140px;
+    background-color: #f5c01c;
+    padding: 15px;
+    transition: all 300ms ease;
+}
+
+.section-headers:hover .section-image {
+    background: #de9302;
+    padding: 10px;
+    transition: all 300ms ease;
+}
+
+/* title of each individual category. */
+.individual-category-title {
+    color: white;
+    margin-top: 5px;
+    font-family: "Major Mono Display",
+        sans-serif;
+}
+
+.explore-button-homepage {
+    font-size: large;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: white;
+}
+
+@media screen and (max-width: 574px) {
+    .section-headers {
+        margin: 10px 20px !important;
+    }
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    .section-headers {
+        margin: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .section-headers {
+        margin: 45px 20px;
+    }
+}
