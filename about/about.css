@@ -1,0 +1,55 @@
+body {
+    background-image: url("../images/about/copy.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* parent div containing all the information */
+.me-info {
+    background: #ffffffb8;
+    padding: 30px;
+}
+
+/* about me text */
+.about-me-title {
+    text-align: center;
+    font-family: "Major Mono Display", sans-serif;
+}
+
+/* targeting the image of */
+.about-me-title img {
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 20px
+}
+
+/* div containing all the social media icons */
+.social-media-parent-div {
+    font-size: 30px;
+    text-align: center
+}
+
+/* tageting the social media icons */
+.social-media-parent-div a {
+    margin: 0 5px;
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .me-info {
+        font-size: xx-small;
+    }
+
+    .about-me-title {
+        font-size: small;
+    }
+
+    .about-me-title img {
+        width: 30px;
+    }
+
+}
