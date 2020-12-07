@@ -1,0 +1,10 @@
+body {
+    background-image: url("../images/project/bkg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jumbotron-image-header {
+    width: 100%;
+}
