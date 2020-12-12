@@ -12,6 +12,7 @@ body {
     /* filter: blur(5px); */
 }
 
+/* div containing the tagline and the name title. */
 .homepage-slogan {
     text-align: center;
     font-family: "Major Mono Display", sans-serif;
