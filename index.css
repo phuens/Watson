@@ -5,10 +5,12 @@ body {
 /* biggets parent container */
 .homepage {
     height: 100vh;
-    background-image: url("./images/new_homepage/wallpaper-3.jpg");
+    background-image: url("./images/homepage/bkg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+   /* border: dashed red 2px;
+    position: block;*/
     /* filter: blur(5px); */
 }
 
@@ -16,7 +18,7 @@ body {
 .homepage-slogan {
     text-align: center;
     font-family: "Major Mono Display", sans-serif;
-    margin-top: 250px
+    margin-top: 200px
 }
 
 /* this is phuntsho norbu */
@@ -39,8 +41,45 @@ body {
 
 /* ===================================== */
 
+.book{
+    background-image: url("./images/homepage/books.png")
+}
+.gallery{
+    background-image: url("./images/homepage/gallery.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about{
+    background-image: url("./images/homepage/about.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.watson{
+    background-image: url("./images/homepage/watson.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project{
+    background-image: url("./images/homepage/project.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.video{
+    background-image: url("./images/homepage/video.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 /* navbar-parent-div */
-.navbar-parent {
+/*.navbar-parent {
     height: 100vh;
     background: rgba(255, 255, 255, 0.795);
     position: absolute;
@@ -49,37 +88,37 @@ body {
     padding-top: 30px;
     transition: ease-in all 200ms;
     display: none;
-}
+}*/
 
 /* close button at the top right  */
-.close-navbar-button i {
+/*.close-navbar-button i {
     float: right;
     font-size: xxx-large;
     margin-right: 35px;
     color: #ababab;
     cursor: pointer;
     transition: all ease 200ms;
-}
+}*/
 
 /* close button at top right */
-.close-navbar-button i:hover {
+/*.close-navbar-button i:hover {
     transition: all ease 200ms;
     transform: rotate(90deg);
     color: red;
-}
+}*/
 
 /* individual section/catgeory parent div */
-.section-headers {
+/*.section-headers {
     background: #c4c4c4;
     height: 140px;
     padding: 0 !important;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     margin: 40px;
-}
+}*/
 
 /* image for individual section */
-.section-image {
+/*.section-image {
     width: 140px;
     background-color: #f5c01c;
     padding: 15px;
@@ -90,10 +129,10 @@ body {
     background: #de9302;
     padding: 10px;
     transition: all 300ms ease;
-}
+}*/
 
 /* title of each individual category. */
-.individual-category-title {
+/*.individual-category-title {
     color: white;
     margin-top: 5px;
     font-family: "Major Mono Display",
@@ -106,24 +145,10 @@ body {
     margin-top: -15px;
     margin-right: -20px;
     color: white;
-}
+}*/
 
-@media screen and (max-width: 574px) {
-    .section-headers {
-        margin: 10px 20px !important;
-    }
-}
-
-
-
-@media screen and (max-width: 1080px) {
-    .section-headers {
-        margin: 20px 20px;
-    }
-}
-
-@media screen and (max-width: 1439px) {
-    .section-headers {
-        margin: 45px 20px;
+@media screen and (max-width: 700px) {
+    .section{
+        text-align: center;
     }
 }
