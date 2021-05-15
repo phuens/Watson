@@ -111,7 +111,8 @@
         <div class="container">
             <div class="row">
             	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 new-review-style">
-            		<p><b>Currently Reading:</b><br>Skin in the Game<span style="font-size: small;">- Nassim Nicholas Taleb</span></p>
+            		<p id="last_update" style="float: right; font-size: smaller"> </p>
+            		<p><b>Currently Reading:</b><br>Before the coffe gets cold<span style="font-size: small;">- Toshikazu Kawaguchi</span></p>
             		<!-- <p>
             			<b>Currently Writing:</b>
             			<br>1. T-Minu Artificial Intelligence <span style="font-size: small;">- Michael Kanaan</span>  -->       
@@ -120,6 +121,22 @@
               	<!--------------------------------------------------------------------------------------------------------------------------------------------------->
               	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 new-review-style">
 	            	<div class="row">
+	            		<!---------------------------------------------------------------------------------------------->
+	            		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 new-review-style" style="text-align:center;">
+	            			<div class="jumbotron" style="padding: 20px 10px 10px 5px !important">
+							  	<img src="../images/books/skin_in_game.jpeg" style="height: 300px; width: auto">
+							  	<div> 
+				                    <p style="font-size: small; color: gray;"> April 27th - May 13th, 2021</p>
+					                <div>
+					                    <span class="fa fa-star star-checked"></span>
+					                    <span class="fa fa-star star-checked"></span>
+					                    <span class="fa fa-star star-checked""></span>
+					                    <span class="fa fa-star "></span>
+					                    <span class="fa fa-star "></span>
+						            </div>
+			                	</div>
+							</div>
+	            		</div>
 	            		<!---------------------------------------------------------------------------------------------->
 	            		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 new-review-style" style="text-align:center;">
 	            			<div class="jumbotron" style="padding: 20px 10px 10px 5px !important">
@@ -818,7 +835,8 @@
                     <script>
     $(document).ready(function () {
       $('#lightgallery').lightGallery();
-
+      let date = new Date(document.lastModified);
+      $("#last_update").html(`Last updated on: <i>${date}</i>`)
       // $('.book-list-title').click(function(){
       //   $(".book-list").slideToggle( "slow" )
       // });
