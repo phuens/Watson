@@ -39,39 +39,60 @@ body {
 }
 
 
-/* ===================================== */
 
+/* ===================================== */
+.sections{
+	padding-top: 50px; 
+	height: 250px;
+	text-align:center;
+}
+.sections h2{
+	font-family: "Festive", sans-serif;
+	margin-bottom: 30px;
+}
+
+.sections a button{
+	border-radius: 50px;
+	color:white;
+	transition: all 300ms ease;
+}
+.sections a button:hover{
+	border-radius: 5px;
+	color: white;
+	transition: all 300ms ease;
+}
 .book{
-    background-image: url("./images/homepage/books.png")
+    background: linear-gradient(0deg, rgb(31 26 29 / 30%), rgb(29 29 29)), url(./images/homepage/books.png) /*filter: alpha(opacity=40);*/;
+    /*filter: alpha(opacity=40);*/
 }
 .gallery{
-    background-image: url("./images/homepage/gallery.png");
+    background: linear-gradient(0deg, rgb(31 26 29 / 30%), rgb(29 29 29)),url(./images/homepage/gallery.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .about{
-    background-image: url("./images/homepage/about.png");
+    background: linear-gradient(0deg, rgb(31 26 29 / 30%), rgb(29 29 29)),url("./images/homepage/about.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .watson{
-    background-image: url("./images/homepage/watson.png");
+   background: linear-gradient(0deg, rgb(31 26 29 / 30%), rgb(29 29 29)),url("./images/homepage/watson.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .project{
-    background-image: url("./images/homepage/project.png");
+    background: linear-gradient(0deg, rgb(31 26 29 / 30%), rgb(29 29 29)),url("./images/homepage/project.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .video{
-    background-image: url("./images/homepage/video.png");
+    background: linear-gradient(0deg, rgb(31 26 29 / 30%), rgb(29 29 29)),url("./images/homepage/video.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -147,8 +168,43 @@ body {
     color: white;
 }*/
 
-@media screen and (max-width: 700px) {
-    .section{
-        text-align: center;
-    }
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 800px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	.sections{
+  		height: 500px;
+  		padding-top:70px;
+  		text-align: center;
+
+  	}
+
+  	.sections h2{
+  		font-size: 150px !important;
+  		margin-bottom: 30px;
+  		
+  	}
+  	.sections p{
+  		font-size: 40px
+  	}
+  	.sections a button{
+  		width: 350px;
+  		font-size: 40px;
+  		color: white;
+  		padding:15px 30px;
+  		border-radius: 80px;
+  	}
+
 }
+
+
+
+
+
+
+
+
