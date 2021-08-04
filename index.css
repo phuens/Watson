@@ -5,7 +5,7 @@ body {
 /* biggets parent container */
 .homepage {
     height: 100vh;
-    background-image: url("./images/homepage/bkg.jpg");
+    background-image: url("./images/homepage/bkg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -18,18 +18,58 @@ body {
 .homepage-slogan {
     text-align: center;
     font-family: "Major Mono Display", sans-serif;
-    margin-top: 200px
+    margin-top: 200px;
+    display: inline-block;
+}
+/*.homepage-slogan img{
+	border-radius: 50%; 
+	width:100px
+}
+*/
+.typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    /*font-size: 30px;*/
+    font-weight: 400;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
 }
 
 /* this is phuntsho norbu */
 .name-title {
     font-size: 100px;
-    color: rgba(255, 255, 255, 0.541);
+    color: rgba(255, 255, 255, 1);
 }
 
 /* a goof since 1995 */
 .tagline {
-    color: white
+    color: white;
+    margin-top:30px;
+}
+.tagline a:hover{
+	background-color: #ff9900 !important;
+	transition: all ease 220ms;
 }
 
 /* explore button under the tagline*/
@@ -176,6 +216,26 @@ body {
   and (min-device-width: 320px) 
   and (max-device-width: 800px)
   and (-webkit-min-device-pixel-ratio: 2) {
+  	.homepage-slogan img{
+		border-radius: 50%; 
+		width:300px
+	}
+	.name-title {
+	    font-size: 140px;
+	    margin-top: 200px;
+	}
+
+	/* a goof since 1995 */
+	.tagline {
+		font-size: 35px !important;
+	    color: white; 
+	    margin: 50px 0px;
+	}
+	.fa-question-circle{
+		font-size: 50px !important;
+		color: rgba(255, 255, 255, 0.541) !important;
+	}
+
   	.sections{
   		height: 500px;
   		padding-top:70px;
@@ -198,6 +258,8 @@ body {
   		padding:15px 30px;
   		border-radius: 80px;
   	}
+
+
 
 }
 
