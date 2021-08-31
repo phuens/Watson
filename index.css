@@ -112,7 +112,7 @@ body {
     background-position: center;
 }
 .about{
-    background: linear-gradient(0deg, rgb(31 26 29 / 30%), rgb(29 29 29)),url("./images/homepage/about.png");
+    background: linear-gradient(0deg, rgb(31 26 29 / 30%), rgb(29 29 29)),url("./images/homepage/about.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
