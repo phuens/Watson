@@ -85,6 +85,8 @@ body {
 	padding-top: 50px; 
 	height: 250px;
 	text-align:center;
+  margin: 20px 30px;
+  border-radius: 3px
 }
 .sections h2{
 	font-family: "Festive", sans-serif;
