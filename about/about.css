@@ -4,7 +4,6 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 /* parent div containing all the information */
@@ -40,16 +39,25 @@ body {
 
 
 @media only screen and (max-width: 700px) {
+    body {
+        background-image: url("../images/about/copy.jpg");
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .me-info {
-        font-size: xx-small;
+        font-size: small;
+        margin: 10px;
+        background: #ffffffF0;
     }
 
     .about-me-title {
-        font-size: small;
+        font-size: large;
     }
 
     .about-me-title img {
-        width: 30px;
+        width: 50px;
     }
 
 }
