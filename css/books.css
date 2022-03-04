@@ -111,9 +111,9 @@
 .new-review-content {
   text-align: justify;
 }
-.star-rating {
+/*.star-rating {
   float: right;
-}
+}*/
 .star-checked {
   color: gold;
 }
@@ -164,7 +164,7 @@
     margin-left: 0px;
   }
 
-  .star-rating {
+/*  .star-rating {
     float: none;
-  }
+  }*/
 }
